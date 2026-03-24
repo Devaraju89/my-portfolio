@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="profile-container">
             <div className="profile-glow"></div>
             <div className="profile-card">
-              {/* Profile image removed temporarily. Add back your <img /> tag here later. */}
+              <img src="/assets/img/passport_size.jpg" alt="Rangappa Gari Devaraju" className="profile-img" />
             </div>
           </div>
         </Reveal>
