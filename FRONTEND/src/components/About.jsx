@@ -14,7 +14,7 @@ const About = () => {
           <Reveal direction="right" className="about-card glass card">
             <div className="card-icon"><i className="fas fa-pen-nib"></i></div>
             <h3>Who I Am</h3>
-            <p>I am a 3rd-year B.Tech student in Computer Science and Engineering at <strong>Lovely Professional University</strong> (CGPA: 7.31), passionate about <strong>UI/UX Design</strong> and creating intuitive, user-centered digital experiences.</p>
+            <p>I am a 4th-year B.Tech student in Computer Science and Engineering at <strong>Lovely Professional University</strong> (CGPA: 7.31), passionate about <strong>UI/UX Design</strong> and creating intuitive, user-centered digital experiences.</p>
             <p>With a keen eye for visual design and a strong foundation in frontend technologies, I focus on crafting responsive, accessible, and aesthetically compelling interfaces that solve real user problems through design thinking.</p>
             
             <div className="stats-row">
@@ -23,7 +23,7 @@ const About = () => {
                     <span className="stat-lab">Projects</span>
                 </div>
                 <div className="stat-item">
-                    <span className="stat-num">4+</span>
+                    <span className="stat-num">10+</span>
                     <span className="stat-lab">Certificates</span>
                 </div>
                 <div className="stat-item">
@@ -52,7 +52,7 @@ const About = () => {
                   <div className="timeline-dot"></div>
                   <div className="timeline-date">March 2021</div>
                   <h4>Matriculation</h4>
-                  <p>Z.P.H.S Yerragunta | 86.6%</p>
+                  <p>Z.P.H.S Yerragunta | 96.6%</p>
               </div>
             </Reveal>
           </div>
