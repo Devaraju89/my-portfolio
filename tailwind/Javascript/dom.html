@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let para=document.createElement("p");
+        para.textContent="This is a new paragraph";
+        document.body.appendChild(para);
+
+        let node = document.createElement("Text Node");
+        document.body.appendChild(node);
+
+        let div1 = document.createElement("div");
+        div1.className="w-32 h-32 p-3 bg-pink-600";
+        document.body.appendChild(div1);
+        div1.appendChild(para);
+        div1.appendChild(node);
+    </script>
+</body>
+</html>

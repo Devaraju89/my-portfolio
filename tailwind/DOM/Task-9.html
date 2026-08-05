@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Paragraph Styler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-300 to-blue-600">
+
+    <h1 class="text-3xl font-bold text-white mb-6">Dynamic Paragraph Styler</h1>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center space-y-4">
+        <p id="styledParagraph" class="text-gray-700">Customize this paragraph!</p>
+
+        <div>
+            <label class="block mb-1 font-medium">Text color:</label>
+            <input id="colorInput" type="text" placeholder="e.g. red, blue, #FF5733" class="w-full border border-gray-300 p-2 rounded">
+        </div>
+
+        <div>
+            <label class="block mb-1 font-medium">Font size (px):</label>
+            <input id="sizeInput" type="number" placeholder="e.g. 20" class="w-full border border-gray-300 p-2 rounded">
+        </div>
+        <div>
+            <p>Background color: </p>
+            <input id="sizeInput" type="number" placeholder="e.g. 20" class="w-full border border-gray-300 p-2 rounded">
+ 
+        </div>
+
+        <button onclick="applyStyles()" class="bg-blue-800 hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded">
+            Apply Style
+        </button>
+    </div>
+
+    <script>
+        function applyStyles() {
+            const paragraph = document.getElementById('styledParagraph');
+            const color = document.getElementById('colorInput').value;
+            const size = document.getElementById('sizeInput').value;
+
+            if (color) paragraph.style.color = color;
+            if (size) paragraph.style.fontSize = `${size}px`;
+        }
+    </script>
+
+</body>
+</html>

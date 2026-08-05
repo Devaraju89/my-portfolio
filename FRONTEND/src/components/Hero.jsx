@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Reveal } from './Reveal';
 
 const Hero = () => {
-  const words = ["Full-Stack Developer", "MERN Specialist", "AI Enthusiast", "Problem Solver"];
+  const words = ["UI/UX Designer", "Design Thinker", "Frontend Craftsman", "Creative Problem Solver"];
   const [currentText, setCurrentText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -43,7 +43,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="container hero-container">
         <Reveal direction="right" className="hero-content">
-          <div className="hero-badge">Available for Opportunity</div>
+          <div className="hero-badge">Open for UI/UX Internship</div>
           <h1 className="hero-title">
             Hi, I'm <span className="gradient-text">Rangappa Gari</span><br />
             <span className="text-white">Devaraju</span>
@@ -52,13 +52,13 @@ const Hero = () => {
             <span className="typewriter">{currentText}</span><span className="cursor">|</span>
           </p>
           <p className="hero-description">
-            Building scalable web applications and AI-driven solutions with excellence in MERN Stack development.
+            Crafting intuitive, user-centered digital experiences through design thinking, responsive interfaces, and a passion for visual storytelling.
           </p>
           <div className="hero-cta">
-            <a href="/assets/docs/RangappaGariDevaraju_CV_2025.pdf" className="btn btn-primary" download="RangappaGariDevaraju_CV_2025.pdf">
+            <a href="/assets/docs/RangappaGariDevaraju_CV_2026.pdf" className="btn btn-primary" download="RangappaGariDevaraju_CV_2026.pdf">
                 <i className="fas fa-file-download me-2"></i>Download CV
             </a>
-            <a href="#projects" className="btn btn-outline">Explore Work</a>
+            <a href="#projects" className="btn btn-outline">View Case Studies</a>
           </div>
           <div className="hero-socials">
             <a href="https://github.com/Devaraju89" target="_blank" rel="noopener noreferrer" title="GitHub"><i className="fab fa-github"></i></a>

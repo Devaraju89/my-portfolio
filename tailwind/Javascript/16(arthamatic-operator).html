@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations in JavaScript</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Arithmetic Operations</h2>
+    
+    <div class="result" id="addition"></div>
+    <div class="result" id="subtraction"></div>
+    <div class="result" id="multiplication"></div>
+    <div class="result" id="division"></div>
+    <div class="result" id="modulus"></div>
+    <div class="result" id="exponentiation"></div>
+    <div class="result" id="increment"></div>
+    <div class="result" id="decrement"></div>
+
+    <script>
+        // Declare variables
+        let a = 10;
+        let b = 5;
+
+        // Perform arithmetic operations and display results
+        document.getElementById("addition").innerHTML = "Addition: " + (a + b);
+        document.getElementById("subtraction").innerHTML = "Subtraction: " + (a - b);
+        document.getElementById("multiplication").innerHTML = "Multiplication: " + (a * b);
+        document.getElementById("division").innerHTML = "Division: " + (a / b);
+        document.getElementById("modulus").innerHTML = "Modulus: " + (a % b);
+        document.getElementById("exponentiation").innerHTML = "Exponentiation: " + (a ** b);
+
+        // Increment and Decrement
+        a++;
+        document.getElementById("increment").innerHTML = "Incremented value of a: " + a;
+
+        b--;
+        document.getElementById("decrement").innerHTML = "Decremented value of b: " + b;
+    </script>
+
+</body>
+</html>

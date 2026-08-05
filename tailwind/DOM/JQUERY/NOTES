@@ -1,0 +1,12 @@
+IT IS USED TO REDUCE THE LONG CODE INTO SHORT
+1>selectors
+2>events
+
+Basic syntax is: $(selector). action()
+A $ sign to define/access Query
+A (selector) to "query (or find)" HTML elements
+A Query action() to be performed on the element (s)
+Examples:
+(this).hide() - hides the current element.
+S(*p").hide() - hides all ‹p› elements.
+S("- test").hide() - hides the elements with id = "test"

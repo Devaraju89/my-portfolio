@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM METHOD WITH getElementsByClassName</title>
+</head>
+<body>
+    <p>this example demonstrates the <b>getElementsByClassName</b> method.</p>
+    <p class="intro">Intro paragraph</p>
+    <p id="demo"></p>
+    <script>
+        const element = document.getElementsByClassName("intro")[0]; // First element with class "intro"
+        document.getElementById("demo").innerHTML = 
+        "The text from the intro paragraph is: " + element.innerHTML;
+    </script>
+</body>
+</html>
+ 

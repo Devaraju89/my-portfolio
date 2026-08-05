@@ -5,6 +5,7 @@ import About from './components/About.jsx';
 import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
 import Certifications from './components/Certifications.jsx';
+import Achievements from './components/Achievements.jsx';
 import Contact from './components/Contact.jsx';
 import ParticleBackground from './components/ParticleBackground.jsx';
 import InitialLoader from './components/InitialLoader.jsx';
@@ -27,6 +28,7 @@ function App() {
           <Skills />
           <Projects />
           <Certifications />
+          <Achievements />
           <Contact />
         </main>
       </div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VIA Table</title>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div>
+        <table class="border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-green-500 text-white">
+                    <th class="border border-gray-400" rowspan="2">Category</th>
+                    <th class="border border-gray-400" rowspan="2">Subcategory</th>
+                    <th class="border border-gray-400" colspan="3">Details</th>
+                </tr>
+                <tr class="bg-green-500 text-white">
+                    <th class="border border-gray-400">Name</th>
+                    <th class="border border-gray-400">Color</th>
+                    <th class="border border-gray-400">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-200">
+                    <td class="border border-gray-400 px-4 py-2" rowspan="4">Fruits</td>
+                    <td class="border border-gray-400 px-4 py-2" rowspan="2">Citrus</td>
+                    <td class="border border-gray-400 px-4 py-2">Orange</td>
+                    <td class="border border-gray-400 px-4 py-2">Orange</td>
+                    <td class="border border-gray-400 px-4 py-2">Year-round</td>
+                </tr>
+                <tr class="bg-gray-200">
+                    <td class="border border-gray-400 px-4 py-2">Lemon</td>
+                    <td class="border border-gray-400 px-4 py-2">Yellow</td>
+                    <td class="border border-gray-400 px-4 py-2">Year-round</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="border border-gray-400 px-4 py-2" rowspan="2">Berries</td>
+                    <td class="border border-gray-400 px-4 py-2">Strawberry</td>
+                    <td class="border border-gray-400 px-4 py-2">Red</td>
+                    <td class="border border-gray-400 px-4 py-2">Spring</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="border border-gray-400 px-4 py-2">Blueberry</td>
+                    <td class="border border-gray-400 px-4 py-2">Blue</td>
+                    <td class="border border-gray-400 px-4 py-2">Summer</td>
+                </tr>
+                <tr class="bg-gray-200">
+                    <td class="border border-gray-400 px-4 py-2" rowspan="4">Vegetables</td>
+                    <td class="border border-gray-400 px-4 py-2" rowspan="2">Leafy</td>
+                    <td class="border border-gray-400 px-4 py-2">Spinach</td>
+                    <td class="border border-gray-400 px-4 py-2">Green</td>
+                    <td class="border border-gray-400 px-4 py-2">Year-round</td>
+                </tr>
+                <tr class="bg-gray-200">
+                    <td class="border border-gray-400 px-4 py-2">Lettuce</td>
+                    <td class="border border-gray-400 px-4 py-2">Green</td>
+                    <td class="border border-gray-400 px-4 py-2">Year-round</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="border border-gray-400 px-4 py-2" rowspan="2">Root</td>
+                    <td class="border border-gray-400 px-4 py-2">Carrot</td>
+                    <td class="border border-gray-400 px-4 py-2">Orange</td>
+                    <td class="border border-gray-400 px-4 py-2">Year-round</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="border border-gray-400 px-4 py-2">Radish</td>
+                    <td class="border border-gray-400 px-4 py-2">Purple</td>
+                    <td class="border border-gray-400 px-4 py-2">Winter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

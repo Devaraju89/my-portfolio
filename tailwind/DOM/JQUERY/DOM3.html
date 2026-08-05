@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Attr Toggle</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body style="text-align: center; margin-top: 50px;">
+
+  <input type="text" id="myInput" placeholder="Type here"><br><br>
+  <button id="myBtn">Disable if Empty</button>
+
+  <script>
+    $(document).ready(function () {
+      $('#myBtn').click(function () {
+        if ($('#myInput').val() != '') {
+          $('#myInput').removeAttr('disabled');
+        } else {
+          $('#myInput').attr('disabled', 'disabled');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

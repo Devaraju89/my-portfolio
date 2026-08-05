@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to My Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-white p-10 text-center font-serif">
+
+  <h1 class="text-4xl font-bold mb-10">Welcome to My Web Page</h1>
+
+  <div class="flex justify-center">
+    <table id="companyTable" class="border border-black text-left">
+      <thead>
+        <tr class="bg-yellow-400 font-bold text-lg">
+          <th class="border border-black px-6 py-2">Company</th>
+          <th class="border border-black px-6 py-2">Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-black px-6 py-2">Alfreds Futterkiste</td>
+          <td class="border border-black px-6 py-2">Germany</td>
+        </tr>
+        <tr class="bg-yellow-300">
+          <td class="border border-black px-6 py-2">Berglunds snabbköp</td>
+          <td class="border border-black px-6 py-2">Sweden</td>
+        </tr>
+        <tr>
+          <td class="border border-black px-6 py-2">Centro comercial Moctezuma</td>
+          <td class="border border-black px-6 py-2">Mexico</td>
+        </tr>
+        <tr class="bg-yellow-300">
+          <td class="border border-black px-6 py-2">Ernst Handel</td>
+          <td class="border border-black px-6 py-2">Austria</td>
+        </tr>
+        <tr>
+          <td class="border border-black px-6 py-2">Island Trading</td>
+          <td class="border border-black px-6 py-2">UK</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    // Optional: click row to toggle highlight
+    $(document).ready(function () {
+      $('#companyTable tbody tr').click(function () {
+        $(this).toggleClass('bg-yellow-200');
+      });
+    });
+  </script>
+
+</body>
+</html> 

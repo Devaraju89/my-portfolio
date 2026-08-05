@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car List</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const cars = ["MERCEDES", "BMW", "LAMBORGHINI", "FERRARI", "ROLLS-ROYCE"];
+        let i = 2; 
+        let len = cars.length;
+        let text = "";
+
+        while (i < len) {
+            text += cars[i] + "<br>";
+            i++; // Increment i in each iteration
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

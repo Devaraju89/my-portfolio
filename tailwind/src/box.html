@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Slideshow</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-center p-4">
+
+    <h2 class="text-xl font-bold mb-4">Image Slideshow</h2>
+    <img id="slideshow" src="/imgGallery/image1.jpeg" class="mx-auto w-96 h-64 border mb-4">
+    <img id="slideshow" src="/imgGallery/image1.jpeg" class="mx-auto w-96 h-64 border mb-4">
+    <img id="slideshow" src="/imgGallery/image1.jpeg" class="mx-auto w-96 h-64 border mb-4">
+
+
+    <div class="space-x-2">
+        <button id="prev" class="bg-blue-500 text-white px-4 py-2 rounded">PREV</button>
+        <button id="next" class="bg-green-500 text-white px-4 py-2 rounded">NEXT</button>
+        <button id="changeColor" class="bg-purple-500 text-white px-4 py-2 rounded">Change Color</button>
+    </div>
+
+    <script>
+        $(function () {
+            var images = [
+    "imageGallery/image1.jpeg",
+    "imageGallery/image2.jpeg",
+    "imageGallery/image3.jpeg"
+];
+
+            var index = 0;
+
+            function showImage() {
+                $('#slideshow').attr('src', images[index]);
+            }
+
+            $('#next').click(function () {
+                index = (index + 1) % images.length;
+                showImage();
+            });
+
+            $('#prev').click(function () {
+                index = (index - 1 + images.length) % images.length;
+                showImage();
+            });
+
+            setInterval(function () {
+                $('#next').click();
+            }, 3000);
+
+            $('#changeColor').click(function () {
+                let color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                $('body').css('background-color', color);
+            });
+        });
+    </script>
+
+</body>
+</html>

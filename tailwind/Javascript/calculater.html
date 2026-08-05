@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-72">
+        <input id="display" type="text" class="w-full text-right p-3 text-2xl bg-gray-700 text-white rounded" disabled>
+
+        <div class="grid grid-cols-4 gap-2 mt-4">
+            <!-- First row -->
+            <button class="btn bg-red-500" onclick="clearDisplay()">C</button>
+            <button class="btn bg-gray-600" onclick="appendValue('/')">/</button>
+            <button class="btn bg-gray-600" onclick="appendValue('*')">×</button>
+            <button class="btn bg-gray-600" onclick="appendValue('-')">−</button>
+
+            <!-- Second row -->
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn bg-gray-600" onclick="appendValue('+')">+</button>
+
+            <!-- Third row -->
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn bg-gray-600 row-span-2" onclick="calculateResult()">=</button>
+
+            <!-- Fourth row -->
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+
+            <!-- Last row -->
+            <button class="btn col-span-2" onclick="appendValue('0')">0</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+        </div>
+    </div>
+
+    <script>
+        function appendValue(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+
+        function calculateResult() {
+            try {
+                document.getElementById("display").value = eval(document.getElementById("display").value);
+            } catch {
+                document.getElementById("display").value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>

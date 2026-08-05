@@ -1,0 +1,29 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Z-Index Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 p-4" >
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-4"> Tailwind CSS Z- Index Example </h1>
+        <div class="relative h-64">
+            <div class="absolute top-0 left-0 w-40 h-40 bg-blue-500 z-10 flex items-center justify-center">
+                <p class="text-white font-bold">Box 1(z-10)</p>
+                <div class="absolute top-10 left-10 w-40 h-40 bg-red-500 z-20 flex items-center justify-center">
+                    <p class="text-white font-bold">Box 2(z-20)</p>
+                </div>
+                <div class="absolute top-20 left-20 w-40 h-40 bg-green-500 z-30 flex items-center justify-center">
+                    <p class="text-white font-bold">Box 3(z-30)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

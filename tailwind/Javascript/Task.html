@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Select Your Items</h1>
+        
+        <div id="items" class="grid grid-cols-2 gap-4 mb-4">
+            <div class="p-4 border rounded-lg">Item 1 - $500 <input type="checkbox" value="500" class="item" /></div>
+            <div class="p-4 border rounded-lg">Item 2 - $400 <input type="checkbox" value="400" class="item" /></div>
+            <div class="p-4 border rounded-lg">Item 3 - $600 <input type="checkbox" value="600" class="item" /></div>
+            <div class="p-4 border rounded-lg">Item 4 - $300 <input type="checkbox" value="300" class="item" /></div>
+            <div class="p-4 border rounded-lg">Item 5 - $700 <input type="checkbox" value="700" class="item" /></div>
+        </div>
+
+        <div class="mb-4">
+            <label class="font-semibold">Discount Code:</label>
+            <input id="discountCode" type="text" class="border rounded p-2 w-full" placeholder="Enter code (e.g., 0b0011)" />
+        </div>
+
+        <button onclick="calculateTotal()" class="bg-blue-500 text-white px-4 py-2 rounded">Calculate Total</button>
+
+        <div id="result" class="mt-6 text-lg font-semibold"></div>
+    </div>
+
+    <script>
+        function calculateTotal() {
+            const items = document.querySelectorAll('.item:checked');
+            let total = 0;
+
+            // Sum up the selected items
+            items.forEach(item => {
+                total += parseInt(item.value);
+            });
+
+            // Apply 10% discount if total > 1500
+            if (total > 1500) {
+                total *= 0.90;
+            }
+
+            // Apply free shipping if total after discount > 2000
+            let freeShipping = total > 2000 ? 'Yes' : 'No';
+
+            // Apply extra $100 discount if total > 1800 or membership
+            const hasMembership = true; // Simulating membership status
+            if (total > 1800 || hasMembership) {
+                total -= 100;
+            }
+
+            // Check for discount code and apply 5% bonus using bitwise operator
+            const discountCode = document.getElementById('discountCode').value.trim();
+            if ((parseInt(discountCode) & 0b0011) === 0b0011) {
+                total *= 0.95;
+            }
+
+            total = total.toFixed(2);
+            
+            // Display the final result
+            document.getElementById('result').innerHTML = `
+                Total Price: $${total} <br/>
+                Free Shipping: ${freeShipping}
+            `;
+        }
+    </script>
+</body>
+</html>

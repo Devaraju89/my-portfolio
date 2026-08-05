@@ -9,7 +9,7 @@ const Header = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      const sections = ['home', 'about', 'skills', 'projects', 'certifications', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'certifications', 'achievements', 'contact'];
       let current = '';
 
       sections.forEach((id) => {
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
         <nav className="nav">
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`} id="nav-links">
-            {['Home', 'About', 'Skills', 'Projects', 'Certifications', 'Contact'].map((item) => {
+            {['Home', 'About', 'Skills', 'Projects', 'Certifications', 'Achievements', 'Contact'].map((item) => {
               const id = item.toLowerCase();
               return (
                 <li key={id}>

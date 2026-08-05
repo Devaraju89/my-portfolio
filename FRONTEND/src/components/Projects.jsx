@@ -3,36 +3,24 @@ import { Reveal } from './Reveal';
 
 const projects = [
   {
-    title: "Pet Adoption Platform",
-    desc: "Full-stack platform with adoption workflows, medical record tracking, and donation management using MERN stack.",
+    title: "AI-Travel-Management Platform",
+    desc: "Designed and architected a comprehensive travel platform connecting tourists with verified local guides. Crafted clean, highly responsive UI using Blade templates and CSS, ensuring smooth navigation and intuitive browsing experience across all devices.",
     img: "/assets/img/image copy 3.png",
     github: "https://github.com/Devaraju89",
-    demo: "https://pet-adoption-platform-zeta.vercel.app/",
-    tags: ["MongoDB", "Express", "React", "Node.js"]
+    demo: "https://github.com/Devaraju89",
+    tags: ["Responsive Design", "User Flow", "Blade UI", "CSS Architecture"],
+    techStack: "Laravel (PHP) · MongoDB · JavaScript (ES6+) · REST APIs",
+    date: "May 2025"
   },
   {
-    title: "OneKart Organic Marketplace",
-    desc: "E-commerce platform connecting farmers directly to consumers with integrated cart and persistent sessions.",
+    title: "OneKart – Organic Marketplace",
+    desc: "Established an end-to-end Organic E-seller marketplace. Implemented a seamlessly responsive, interactive frontend layout, prioritizing modern UI/UX design patterns to maximize visual fidelity and overall client interaction.",
     img: "/assets/img/image copy 2.png",
     github: "https://github.com/Devaraju89",
     demo: "https://onekart-devaraju.vercel.app/",
-    tags: ["MERN", "Tailwind", "React Context"]
-  },
-  {
-    title: "Virtual Therapy Bot",
-    desc: "AI assistant featuring Mood-Tracking and human-like conversational flow powered by Gemini API.",
-    img: "/assets/img/image copy.png",
-    github: "https://github.com/Devaraju89",
-    demo: "https://virtual-therapy-bot.onrender.com/",
-    tags: ["Node.js", "Gemini AI", "Express"]
-  },
-  {
-    title: "Smart Learning Platform",
-    desc: "Interactive educational platform with quizzes and custom theme support.",
-    img: "/assets/img/image.png",
-    github: "https://github.com/Devaraju89",
-    demo: "https://smart-learning-platform-zeta.vercel.app/",
-    tags: ["React", "Vercel", "Interactive UI"]
+    tags: ["UI/UX Patterns", "Interactive Layout", "Visual Design", "Responsive"],
+    techStack: "MongoDB · Express · React · Node.js · Tailwind CSS",
+    date: "October 2025"
   }
 ];
 
@@ -41,13 +29,13 @@ const Projects = () => {
     <section id="projects" className="projects section-padding">
         <div className="container">
             <Reveal direction="up" className="section-title">
-                <span className="subtitle">Portfolio</span>
-                <h2>Featured <span className="gradient-text">Projects</span></h2>
+                <span className="subtitle">Case Studies</span>
+                <h2>Design <span className="gradient-text">Projects</span></h2>
             </Reveal>
 
             <div className="projects-grid">
                 {projects.map((proj, idx) => (
-                    <Reveal key={idx} direction="up" delay={idx * 0.1} className="project-card glass">
+                    <Reveal key={idx} direction="up" delay={idx * 0.15} className="project-card glass">
                         <div className="p-img">
                             <img src={proj.img} alt={proj.title} />
                             <div className="p-overlay">
@@ -56,12 +44,16 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="p-content">
+                            <div className="p-date">{proj.date}</div>
                             <h3>{proj.title}</h3>
                             <p>{proj.desc}</p>
                             <div className="p-tags">
                                 {proj.tags.map((tag, i) => (
                                     <span key={i}>{tag}</span>
                                 ))}
+                            </div>
+                            <div className="p-tech-stack">
+                                <i className="fas fa-cog"></i> {proj.techStack}
                             </div>
                         </div>
                     </Reveal>

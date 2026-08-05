@@ -12,10 +12,10 @@ const About = () => {
 
         <div className="about-grid">
           <Reveal direction="right" className="about-card glass card">
-            <div className="card-icon"><i className="fas fa-user-graduate"></i></div>
+            <div className="card-icon"><i className="fas fa-pen-nib"></i></div>
             <h3>Who I Am</h3>
-            <p>I am a 3rd-year B.Tech student in Computer Science and Engineering at <strong>Lovely Professional University</strong> (CGPA: 7.19). Passionate about full-stack development and integrating AI into modern web solutions.</p>
-            <p>With a strong foundation in DSA and a versatile tech stack, I focus on building efficient, scalable, and user-centric applications.</p>
+            <p>I am a 3rd-year B.Tech student in Computer Science and Engineering at <strong>Lovely Professional University</strong> (CGPA: 7.31), passionate about <strong>UI/UX Design</strong> and creating intuitive, user-centered digital experiences.</p>
+            <p>With a keen eye for visual design and a strong foundation in frontend technologies, I focus on crafting responsive, accessible, and aesthetically compelling interfaces that solve real user problems through design thinking.</p>
             
             <div className="stats-row">
                 <div className="stat-item">
@@ -23,7 +23,7 @@ const About = () => {
                     <span className="stat-lab">Projects</span>
                 </div>
                 <div className="stat-item">
-                    <span className="stat-num">10+</span>
+                    <span className="stat-num">4+</span>
                     <span className="stat-lab">Certificates</span>
                 </div>
                 <div className="stat-item">
@@ -40,7 +40,7 @@ const About = () => {
                   <div className="timeline-dot"></div>
                   <div className="timeline-date">2023 - Present</div>
                   <h4>B.Tech CSE</h4>
-                  <p>Lovely Professional University | CGPA: 7.19</p>
+                  <p>Lovely Professional University | CGPA: 7.31</p>
               </div>
               <div className="timeline-box">
                   <div className="timeline-dot"></div>
@@ -52,27 +52,46 @@ const About = () => {
                   <div className="timeline-dot"></div>
                   <div className="timeline-date">March 2021</div>
                   <h4>Matriculation</h4>
-                  <p>Z.P.H.S Yerragunta | 96%</p>
+                  <p>Z.P.H.S Yerragunta | 86.6%</p>
               </div>
             </Reveal>
           </div>
         </div>
 
-        {/* Brand New Dedicated Professional Training Section for High Visibility */}
-        <Reveal direction="up" delay={0.4}>
+        {/* Design Philosophy Section */}
+        <Reveal direction="up" delay={0.3}>
           <div className="glass" style={{ marginTop: '60px', padding: '40px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '30px', justifyContent: 'space-between' }}>
               <div>
-                  <h3 style={{ fontSize: '2rem', color: 'var(--cyan)', marginBottom: '10px' }}>Professional Training</h3>
-                  <p style={{ color: 'var(--text-muted)' }}>Intensive skill-building and continuous mastery.</p>
+                  <h3 style={{ fontSize: '2rem', color: 'var(--cyan)', marginBottom: '10px' }}>Design Philosophy</h3>
+                  <p style={{ color: 'var(--text-muted)', maxWidth: '500px' }}>I believe great design is invisible — it should feel natural, intuitive, and effortless. Every pixel serves a purpose, every interaction tells a story.</p>
               </div>
-              <div style={{ display: 'flex', gap: '20px', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '20px 30px', borderRadius: '15px', border: '1px solid var(--border-light)' }}>
-                  <div style={{ background: 'var(--gradient-primary)', width: '60px', height: '60px', borderRadius: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#11100F', fontSize: '1.8rem' }}>
-                      <i className="fas fa-laptop-code"></i>
+              <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', gap: '15px', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '20px 25px', borderRadius: '15px', border: '1px solid var(--border-light)' }}>
+                      <div style={{ background: 'var(--gradient-primary)', width: '50px', height: '50px', borderRadius: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#11100F', fontSize: '1.5rem' }}>
+                          <i className="fas fa-search"></i>
+                      </div>
+                      <div>
+                          <h4 style={{ fontSize: '1rem', margin: '0 0 4px' }}>Research</h4>
+                          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Understand users first</p>
+                      </div>
                   </div>
-                  <div>
-                      <span style={{ fontSize: '0.9rem', color: 'var(--cyan)', fontWeight: 'bold' }}>July 2025</span>
-                      <h4 style={{ fontSize: '1.3rem', margin: '5px 0' }}>DSA Training</h4>
-                      <p style={{ margin: 0, fontWeight: 600 }}>Board Infinity <span style={{ opacity: 0.5 }}>|</span> C++ Mastery</p>
+                  <div style={{ display: 'flex', gap: '15px', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '20px 25px', borderRadius: '15px', border: '1px solid var(--border-light)' }}>
+                      <div style={{ background: 'var(--gradient-primary)', width: '50px', height: '50px', borderRadius: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#11100F', fontSize: '1.5rem' }}>
+                          <i className="fas fa-pencil-ruler"></i>
+                      </div>
+                      <div>
+                          <h4 style={{ fontSize: '1rem', margin: '0 0 4px' }}>Design</h4>
+                          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Prototype & iterate</p>
+                      </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '15px', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '20px 25px', borderRadius: '15px', border: '1px solid var(--border-light)' }}>
+                      <div style={{ background: 'var(--gradient-primary)', width: '50px', height: '50px', borderRadius: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#11100F', fontSize: '1.5rem' }}>
+                          <i className="fas fa-code"></i>
+                      </div>
+                      <div>
+                          <h4 style={{ fontSize: '1rem', margin: '0 0 4px' }}>Implement</h4>
+                          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Pixel-perfect build</p>
+                      </div>
                   </div>
               </div>
           </div>

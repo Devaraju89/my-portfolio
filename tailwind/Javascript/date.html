@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Display</title>
+</head>
+<body>
+    <button onclick="showDate()">Show Date</button>
+    <div id="content"></div>
+
+    <script>
+        function showDate() {
+            document.getElementById('content').innerText = new Date().toLocaleDateString();
+        }
+    </script>
+</body>
+</html>

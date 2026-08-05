@@ -1,0 +1,55 @@
+JavaScript: The Language of the Web
+
+1. Introduction to JavaScript  
+- JavaScript is a client-side and server-side programming language.  
+- It enhances web interactivity and dynamic behavior.  
+
+2. Displaying Data in JavaScript
+JavaScript can display data using different methods:  
+1. **innerHTML or innerText** – Modify HTML content.  
+2. **document.write()** – Directly write to the document (used mainly for testing).  
+3. **window.alert()** – Display an alert box with a message.  
+4. **console.log()** – Output to the browser’s console (useful for debugging).  
+3. Including JavaScript in HTML  
+JavaScript can be included in two ways:  
+1. Internal– Written inside a <script> tag within the HTML file.  
+   - If inside a function, it should be in the <body> section.  
+   - If not inside a function, it can be placed anywhere in the HTML document.  
+2. External – Written in a separate .js file and linked using <script src="file.js"></script>.  
+
+4. JavaScript Events (DOM Events)
+JavaScript interacts with the Document Object Model (DOM) to handle events.  
+
+- Mouse Events – click, mouseover, mouseout, etc.  
+- Keyboard Events – keydown, keyup, keypress, etc.  
+
+ 5. Understanding the DOM (Document Object Model)
+- The browser creates a DOM structure representing the web page.  
+- The DOM allows JavaScript to manipulate HTML elements dynamically.  
+- Using JavaScript, you can:  
+  - Change HTML elements and attributes.  
+  - Modify the content of an HTML page.  
+  - Remove elements dynamically.  
+
+6. W3C Standard & DOM Structure
+- W3C (World Wide Web Consortium) sets web standards.  
+- The DOM is divided into three parts:  
+  1. *XML DOM* – Used for structured data handling.  
+  2. HTML DOM – Represents the structure of an HTML document.  
+  3. Core DOM – Provides a standard way to manipulate XML and HTML.  
+
+
+DOM TREE- HTML AND OTHER TAGS. DOM(DOCUMENT OBJECT MODEL)
+WRITE STRING
+GETELEMENT BY ID
+GETELEMENT BY TAGNAME
+GETELEMEMT BY CLASSNAME
+GETELEMEMT BY NAME
+DOM USES METHOD AND PROPERTIES
+
+
+
+EVENT BUBBLE IS IMP FOR VIVA
+
+
+
